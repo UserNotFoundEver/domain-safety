@@ -13,23 +13,30 @@ domain_security_tool/
 
 ├── app/
 
-│   ├── __init__.py
+│   
+├── __init__.py
 
-│   ├── models.py
+│   
+├── models.py
 
-│   ├── routes.py
+│   
+├── routes.py
 
-│   ├── tasks.py
+│   
+├── tasks.py
 
-│   └── utils.py
+│   
+└── utils.py
 
 ├── migrations/
 
 ├── prometheus/
 
-│   ├── prometheus.yml
+│   
+├── prometheus.yml
 
-│   └── app_metrics.py
+│   
+└── app_metrics.py
 
 ├── templates/
 
