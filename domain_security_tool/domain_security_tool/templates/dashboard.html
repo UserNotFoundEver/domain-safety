@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Domain Security Dashboard</title>
+  </head>
+  <body>
+    <h1>Domain Security Dashboard</h1>
+    <form id="scan-form" method="post" action="/scan">
+      <input type="text" name="domain_name" placeholder="Enter domain name">
+      <button type="submit">Scan</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Domain Name</th>
+          <th>Is Vulnerable</th>
+          <th>Last Checked</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for domain in domains %}
+        <tr>
+          <td>{{ domain.domain_name }}</td>
+          <td>{{ domain.is_vulnerable }}</td>
+          <td>{{ domain.last_checked }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
