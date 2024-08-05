@@ -1,8 +1,0 @@
-
-Flask
-Flask-SQLAlchemy
-psycopg2-binary
-Celery
-redis
-requests
-prometheus_client
